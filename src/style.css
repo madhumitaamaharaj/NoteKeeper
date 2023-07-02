@@ -1,0 +1,141 @@
+
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+.note.no-hover:hover {
+  background-color: transparent;
+  color: inherit;
+}
+
+.note-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.note-form input,
+.note-form textarea {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.note-form .button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.note-form .save-button,
+.note-form .cancel-button {
+  padding: 8px 16px;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.note-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.note {
+  position: relative;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.note:hover {
+  background-color: #ffc7da;
+}
+
+.note.pinned {
+  border-color: #221503;
+}
+
+.note .note-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.note .pin-icon {
+  color: #271b0a;
+  font-size: 20px;
+}
+
+.note .note-tagline {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.note .note-body {
+  margin-bottom: 5px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 8px 16px;
+  font-size: 16px;
+}
+
+.pagination span {
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+.app.light {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.app.light header {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app.light .dark-mode-toggle {
+  padding: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+.app.dark {
+  background-color: #333;
+  color: #f2f2f2;
+}
+
+.app.dark header {
+  background-color: #222;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app.dark .dark-mode-toggle {
+  padding: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
